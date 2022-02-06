@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="images/logo-small.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.min.css" />
+
+
+    <title>Title</title>
+  </head>
+
+  <body>
+    <h1 aria-label="Главная старница"></h1>
+    <div class="site-wrapper">
+      <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__top">
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
+        <div class="header__search search-block">
+          <input
+            class="search-block__input"
+            type="text"
+            placeholder="Поиск по магазину"
+          />
+        </div>
+
+        <a class="header__logo logo" href="#">
+          <picture>
+            <source srcset="images/logo-small.png" media="(max-width: 991px)" />
+            <img src="images/logo.png" alt="Логотип" />
+          </picture>
+        </a>
+
+        <div class="header__tools header-tools">
+          <ul class="header-tools__list">
+            <li class="header-tools__item">
+              <button
+                class="header-tools__link header-tools__link--sign-in"
+                type="button"
+              >
+                <span class="header-tools__icon">
+                  <svg width="14" height="15">
+                    <use xlink:href="images/sprite.svg#user-fill"></use>
+                  </svg>
+                </span>
+                <span class="header-tools__text">Войти</span>
+              </button>
+            </li>
+            <li class="header-tools__item">
+              <button
+                class="header-tools__link header-tools__link--sign-in"
+                type="button"
+              >
+                <span class="header-tools__icon">
+                  <svg width="18" height="16">
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </span>
+                <span class="header-tools__text">Избранное</span>
+              </button>
+            </li>
+            <li class="header-tools__item">
+              <button
+                class="header-tools__link header-tools__link--sign-in"
+                type="button"
+              >
+                <span class="header-tools__icon">
+                  <svg width="14" height="18">
+                    <use xlink:href="images/sprite.svg#shopping-bag"></use>
+                  </svg>
+                </span>
+
+                <span class="header-tools__text">Корзина</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Женщинам</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Мужчинам</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Магазины</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Оплата и доставка</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <section class="product">
+  <div class="container">
+    <div class="product__wrapper">
+      <div class="product__slider">
+        <div class="slider-thumbs">
+          <div class="slider-thumbs__nav swiper" id="slider-nav">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide slider-nav__slide">
+                <img
+                  src="images/content/products/slider/1.jpg"
+                  alt="Слайд №1"
+                />
+              </li>
+              <li class="swiper-slide slider-nav__slide">
+                <img
+                  src="images/content/products/slider/2.jpg"
+                  alt="Слайд №1"
+                />
+              </li>
+              <li class="swiper-slide slider-nav__slide">
+                <img
+                  src="images/content/products/slider/3.jpg"
+                  alt="Слайд №1"
+                />
+              </li>
+              <li class="swiper-slide slider-nav__slide">
+                <img
+                  src="images/content/products/slider/4.jpg"
+                  alt="Слайд №1"
+                />
+              </li>
+              <li class="swiper-slide slider-nav__slide">
+                <img
+                  src="images/content/products/slider/5.jpg"
+                  alt="Слайд №1"
+                />
+              </li>
+              <li class="swiper-slide slider-nav__slide">
+                <img
+                  src="images/content/products/slider/6.jpg"
+                  alt="Слайд №1"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <div class="slider-thumbs__main swiper" id="slider-main">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <img
+                  src="images/content/products/slider/1-big.jpg"
+                  alt="Слайд №1"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="images/content/products/slider/2.jpg"
+                  alt="Слайд №2"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="images/content/products/slider/3.jpg"
+                  alt="Слайд №3"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="images/content/products/slider/4.jpg"
+                  alt="Слайд №4"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="images/content/products/slider/5.jpg"
+                  alt="Слайд №4"
+                />
+              </li>
+              <li class="swiper-slide">
+                <img
+                  src="images/content/products/slider/6.jpg"
+                  alt="Слайд №4"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="product__info product-info">
+        <div class="product-info__top">
+          <h2 class="product-info__title section-title">Пальто женское</h2>
+        </div>
+        <p class="product-info__price">7 500 <span>₽</span></p>
+
+        <div class="product-info__colors product-colors">
+          <span class="product-colors__heading">Выберите цвет:</span>
+          <ul class="product-colors__list">
+            <li class="product-colors__item">
+              <button
+                class="product-colors__btn product-colors__btn--active"
+                type="button"
+                style="background-image: url('images/content/products/1.jpg')"
+              ></button>
+            </li>
+            <li class="product-colors__item">
+              <button
+                class="product-colors__btn"
+                type="button"
+                style="
+                  background-image: url('images/content/products/1-blue.jpg');
+                "
+              ></button>
+            </li>
+            <li class="product-colors__item">
+              <button
+                class="product-colors__btn"
+                type="button"
+                style="
+                  background-image: url('images/content/products/1-gray.jpg');
+                "
+              ></button>
+            </li>
+          </ul>
+        </div>
+        <div class="product-info__sizes product-sizes">
+          <span class="product-sizes__heading">Выберите размер:</span>
+          <ul class="product-sizes__list">
+            <li class="product-sizes__item">
+              <button
+                class="product-sizes__btn product-sizes__btn--active"
+                type="button"
+              >
+                38
+              </button>
+            </li>
+            <li class="product-sizes__item">
+              <button class="product-sizes__btn" type="button">40</button>
+            </li>
+            <li class="product-sizes__item">
+              <button class="product-sizes__btn" type="button">42</button>
+            </li>
+            <li class="product-sizes__item">
+              <button class="product-sizes__btn" type="button">44</button>
+            </li>
+            <li class="product-sizes__item">
+              <button class="product-sizes__btn" type="button">46</button>
+            </li>
+            <li class="product-sizes__item">
+              <button class="product-sizes__btn" type="button">48</button>
+            </li>
+            <li class="product-sizes__item">
+              <button class="product-sizes__btn" type="button">50</button>
+            </li>
+            <li class="product-sizes__item">
+              <button class="product-sizes__btn" type="button">52</button>
+            </li>
+            <li class="product-sizes__item">
+              <button class="product-sizes__btn" type="button">54</button>
+            </li>
+            <li class="product-sizes__item">
+              <button class="product-sizes__btn" type="button">56</button>
+            </li>
+            <li class="product-sizes__item">
+              <button class="product-sizes__btn" type="button">58</button>
+            </li>
+            <li class="product-sizes__item">
+              <button class="product-sizes__btn" type="button">60</button>
+            </li>
+            <li class="product-sizes__item">
+              <button class="product-sizes__btn" type="button">62</button>
+            </li>
+            <li class="product-sizes__item">
+              <button class="product-sizes__btn" type="button">64</button>
+            </li>
+            <li class="product-sizes__item">
+              <button class="product-sizes__btn" type="button">66</button>
+            </li>
+            <li class="product-sizes__item">
+              <button class="product-sizes__btn" type="button">68</button>
+            </li>
+            <li class="product-sizes__item">
+              <button class="product-sizes__btn" type="button">70</button>
+            </li>
+          </ul>
+
+          <a class="product-sizes__link" href="#">Таблица размеров</a>
+        </div>
+
+        <button class="product-info__btn btn" type="button">
+          Добавить в корзину
+        </button>
+
+        <div class="product-info__specitfications product-specs">
+          <h3 class="product-specs__heading">Характеристики</h3>
+          <ul class="product-specs__list">
+            <li class="product-specs__item">Основной материал: 100% нейлон</li>
+            <li class="product-specs__item">Утеплитель: 100% пух</li>
+            <li class="product-specs__item">Цвет: серо-голубой</li>
+            <li class="product-specs__item">Длина изделия по спинке, см: 86</li>
+            <li class="product-specs__item">Опции капюшона: несъемный</li>
+            <li class="product-specs__item">
+              Плотность, утеплителя, г/кв.м: гусиный пух, 290 гр.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="similar-products">
+  <div class="container">
+    <div class="similar-products__wrapper">
+      <h2 class="similar-products__title section-title">Похожие товары</h2>
+
+      <ul class="similar-products__list">
+        <li class="similar-products__item">
+          <article class="product-card">
+            <div class="product-card__btns">
+              <button class="product-btn product-btn--favorite" type="button">
+                <span class="product-btn__icon">
+                  <svg width="14" height="13">
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </span>
+              </button>
+              <button class="product-btn product-btn--cart" type="button">
+                <span class="product-btn__icon">
+                  <svg width="15" height="13">
+                    <use xlink:href="images/sprite.svg#shopping-bag"></use></svg
+                ></span>
+                <span class="product-btn__text">Купить</span>
+              </button>
+            </div>
+
+            <button class="product-card__btn" type="button">
+              Быстрый просмотр
+            </button>
+
+            <div class="product-card__img">
+              <img src="images/content/products/1.jpg" alt="Карточка товара" />
+            </div>
+            <h3 class="product-card__title"><a href="#">Куртка мужская</a></h3>
+            <div class="product-card__price">7 500 <span>₽</span></div>
+          </article>
+        </li>
+        <li class="similar-products__item">
+          <article class="product-card">
+            <div class="product-card__btns">
+              <button class="product-btn product-btn--favorite" type="button">
+                <span class="product-btn__icon">
+                  <svg width="14" height="13">
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </span>
+              </button>
+              <button class="product-btn product-btn--cart" type="button">
+                <span class="product-btn__icon">
+                  <svg width="15" height="13">
+                    <use xlink:href="images/sprite.svg#shopping-bag"></use></svg
+                ></span>
+                <span class="product-btn__text">Купить</span>
+              </button>
+            </div>
+
+            <button class="product-card__btn" type="button">
+              Быстрый просмотр
+            </button>
+
+            <div class="product-card__img">
+              <img src="images/content/products/1.jpg" alt="Карточка товара" />
+            </div>
+            <h3 class="product-card__title"><a href="#">Куртка мужская</a></h3>
+            <div class="product-card__price">7 500 <span>₽</span></div>
+          </article>
+        </li>
+        <li class="similar-products__item">
+          <article class="product-card">
+            <div class="product-card__btns">
+              <button class="product-btn product-btn--favorite" type="button">
+                <span class="product-btn__icon">
+                  <svg width="14" height="13">
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </span>
+              </button>
+              <button class="product-btn product-btn--cart" type="button">
+                <span class="product-btn__icon">
+                  <svg width="15" height="13">
+                    <use xlink:href="images/sprite.svg#shopping-bag"></use></svg
+                ></span>
+                <span class="product-btn__text">Купить</span>
+              </button>
+            </div>
+
+            <button class="product-card__btn" type="button">
+              Быстрый просмотр
+            </button>
+
+            <div class="product-card__img">
+              <img src="images/content/products/1.jpg" alt="Карточка товара" />
+            </div>
+            <h3 class="product-card__title"><a href="#">Куртка мужская</a></h3>
+            <div class="product-card__price">7 500 <span>₽</span></div>
+          </article>
+        </li>
+        <li class="similar-products__item">
+          <article class="product-card">
+            <div class="product-card__btns">
+              <button class="product-btn product-btn--favorite" type="button">
+                <span class="product-btn__icon">
+                  <svg width="14" height="13">
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </span>
+              </button>
+              <button class="product-btn product-btn--cart" type="button">
+                <span class="product-btn__icon">
+                  <svg width="15" height="13">
+                    <use xlink:href="images/sprite.svg#shopping-bag"></use></svg
+                ></span>
+                <span class="product-btn__text">Купить</span>
+              </button>
+            </div>
+
+            <button class="product-card__btn" type="button">
+              Быстрый просмотр
+            </button>
+
+            <div class="product-card__img">
+              <img src="images/content/products/1.jpg" alt="Карточка товара" />
+            </div>
+            <h3 class="product-card__title"><a href="#">Куртка мужская</a></h3>
+            <div class="product-card__price">7 500 <span>₽</span></div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__body">
+        <div class="footer__left">
+          <a class="footer__logo logo" href="#">
+            <img src="images/logo-small.png" alt="Логотип" />
+          </a>
+          <a class="footer__instagram" href="#">
+            <svg width="17" height="17">
+              <use xlink:href="images/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="footer__menu">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">О бренде</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Оферта</a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Обмен и возврат</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Арендодателям</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__right">
+          <div class="footer__top">Магазины в москве</div>
+          <div class="footer__info">
+            <div class="footer__contacts">
+              <address class="footer__address">
+                ТРЦ «ХОРОШО», Хорошевское шоссе, дом 27, 2-этаж
+              </address>
+              <a class="footer__link" href="tel:+79175815583">
+                Телефон: +7 (917) 581 55 83
+              </a>
+              <a class="footer__link" href="tel:+79175815583">
+                What's app: +7 (917) 581 55 83
+              </a>
+            </div>
+
+            <div class="footer__mail">
+              <a href="mailto:info@mark-jacket.com" class="footer__link">
+                info@mark-jacket.com
+              </a>
+
+              <button class="footer__btn" type="button">Напишите нам</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__policy">
+          <span>
+            © 2022 Mark Jacket - Магазин брендовой одежды. Авторские права
+            защищены.
+          </span>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+
+        <div class="footer__pay">
+          <span>Мы принимаем</span>
+          <img src="images/content/pay.png" alt="Visa Мир" />
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
