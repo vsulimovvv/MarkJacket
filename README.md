@@ -5,4 +5,4 @@
 Обмен и возврат: https://vsulimovvv.github.io/mark-jacket/dist/exchange.html  
 Арендодателям: https://vsulimovvv.github.io/mark-jacket/dist/landlords.html  
 Карточка товара: https://vsulimovvv.github.io/mark-jacket/dist/product-card.html  
-Доставка и оплата: https://vsulimovvv.github.io/mark-jacket/dist/chipping-payment.html  
+Доставка и оплата: https://vsulimovvv.github.io/mark-jacket/dist/shipping-payment.html  
