@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     @include('./components/base/_meta.html')
     @include('./components/base/_links.html')
@@ -9,8 +9,28 @@
 
   <body>
     <h1 class="visually-hidden">Страница каталога</h1>
+    <div class="overlay"></div>
     <div class="site-wrapper">
       @include('./components/_header.html')
+
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Женщинам
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link">Зимняя коллекция</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <main class="main">@include('./components/_section-catalog.html')</main>
       @include('./components/_footer.html')
     </div>

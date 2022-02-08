@@ -1,37 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Favicon -->
- <link rel="shortcut icon" href="images/logo-small.png" type="image/x-icon">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="images/logo-small.png" type="image/x-icon" />
 
- <!-- Link Swiper's CSS -->
- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
- <!-- nouislider -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css" />
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
 
- <!-- wSelect -->
- <link rel="stylesheet" href="css/wSelect.css">
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
 
- <!-- Custom Link -->
- <link rel="stylesheet" href="css/style.min.css">
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.min.css" />
+
 
     <title>Title</title>
   </head>
 
   <body>
-    <h1 aria-label="Главная старница"></h1>
+    <h1 class="visually-hidden">Фирменные магазины</h1>
     <div class="site-wrapper">
       <header class="header">
   <div class="container">
     <div class="header__wrapper">
       <div class="header__top">
-        <button class="header__toggle" type="button" aria-label="Открыть меню">
-          <span class="header__toggle-line"></span>
-        </button>
         <div class="header__search search-block">
           <input
             class="search-block__input"
@@ -40,7 +44,7 @@
           />
         </div>
 
-        <a class="header__logo logo" href="#">
+        <a class="header__logo logo" href="index.html">
           <picture>
             <source srcset="images/logo-small.png" media="(max-width: 991px)" />
             <img src="images/logo.png" alt="Логотип" />
@@ -91,7 +95,12 @@
             </li>
           </ul>
         </div>
+
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
       </div>
+      
       <div class="header__bottom">
         <nav class="header__menu menu">
           <ul class="menu__list">
@@ -117,7 +126,67 @@
   </div>
 </header>
 
-      <main class="main"></main>
+      <main class="main"><section class="shop">
+  <div class="container">
+    <div class="shop__wrapper">
+      <h2 class="shop__title section-title">
+        Фирменные магазины
+        <span class="text-logo">
+          <span class="color-red">M</span>ark
+          <span class="color-red">J</span>acket
+        </span>
+      </h2>
+
+      <ul class="shop__list">
+        <li class="shop__item">
+          <h3 class="shop__name">ТРЦ «Хорошо»</h3>
+          <div class="shop__text">
+            <p>
+              г. Москва, м. Полежаевская, Хорошевское Шоссе д.27, 2-й этаж +7
+              (917)581 55 83, ежедневно, 10:00 - 22:00
+            </p>
+          </div>
+        </li>
+        <li class="shop__item">
+          <h3 class="shop__name">ТРЦ «Хорошо»</h3>
+          <div class="shop__text">
+            <p>
+              г. Москва, м. Полежаевская, Хорошевское Шоссе д.27, 2-й этаж +7
+              (917)581 55 83, ежедневно, 10:00 - 22:00
+            </p>
+          </div>
+        </li>
+        <li class="shop__item">
+          <h3 class="shop__name">ТРЦ «Хорошо»</h3>
+          <div class="shop__text">
+            <p>
+              г. Москва, м. Полежаевская, Хорошевское Шоссе д.27, 2-й этаж +7
+              (917)581 55 83, ежедневно, 10:00 - 22:00
+            </p>
+          </div>
+        </li>
+        <li class="shop__item">
+          <h3 class="shop__name">ТРЦ «Хорошо»</h3>
+          <div class="shop__text">
+            <p>
+              г. Москва, м. Полежаевская, Хорошевское Шоссе д.27, 2-й этаж +7
+              (917)581 55 83, ежедневно, 10:00 - 22:00
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="shop__map map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Aca7d8ad744376ca1a4870a111b25c0962d6cb5ec12e5bc0e6b31c71bf00c837a&amp;source=constructor"
+          width="890"
+          height="463"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
       <footer class="footer">
   <div class="container">
     <div class="footer__wrapper">
@@ -204,19 +273,20 @@
 
     </div>
 
-      <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <!-- nouislider -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
 
-  <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 
-  <!-- wSelect -->
-  <script src="js/wSelect.min.js"></script>
+<!-- wNumb -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js"></script>
 
-  <!-- JS -->
-  <script src="js/main.min.js"></script>
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
   </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,15 +30,12 @@
   </head>
 
   <body>
-    <h1 aria-label="Главная старница"></h1>
+    <h1 class="visually-hidden">Арендодателям</h1>
     <div class="site-wrapper">
       <header class="header">
   <div class="container">
     <div class="header__wrapper">
       <div class="header__top">
-        <button class="header__toggle" type="button" aria-label="Открыть меню">
-          <span class="header__toggle-line"></span>
-        </button>
         <div class="header__search search-block">
           <input
             class="search-block__input"
@@ -47,7 +44,7 @@
           />
         </div>
 
-        <a class="header__logo logo" href="#">
+        <a class="header__logo logo" href="index.html">
           <picture>
             <source srcset="images/logo-small.png" media="(max-width: 991px)" />
             <img src="images/logo.png" alt="Логотип" />
@@ -98,7 +95,12 @@
             </li>
           </ul>
         </div>
+
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
       </div>
+      
       <div class="header__bottom">
         <nav class="header__menu menu">
           <ul class="menu__list">
@@ -127,7 +129,7 @@
       <main class="main"><section class="landlords">
   <div class="container">
     <div class="landlords__wrapper">
-      <h1 class="landlords__title section-title">Арендодателям</h1>
+      <h2 class="landlords__title section-title">Арендодателям</h2>
 
       <div class="landlords__text">
         <p>
@@ -143,7 +145,7 @@
         <p>
           Если у Вас есть для нас интересное предложение, пожалуйста, пришлите
           свои предложения нам на электронную почту
-          <a href="mailto: markjacket@mail.ru">markjacket@mail.ru</a>
+          <a href="mailto:markjacket@mail.ru">markjacket@mail.ru</a>
         </p>
       </div>
     </div>
@@ -244,6 +246,9 @@
 
 <!-- Choices JS -->
 <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- wNumb -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js"></script>
 
 <!-- JS -->
 <script src="js/main.min.js"></script>

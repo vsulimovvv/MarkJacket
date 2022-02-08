@@ -1,13 +1,14 @@
 <section class="contacts">
   <div class="container">
+    <h2 class="contacts__title section-title">Контакты</h2>
     <div class="contacts__wrapper">
       <div class="contacts__info">
-        <div class="contacts__box contacts-box">
-          <p class="contacts__text">Телефоны для связи: +7 (917) 581 55 83</p>
-          <div class="socials">
+        <div class="contacts__box contacts-box contacts-box--phone">
+          <p class="contacts-box__text">Телефоны для связи: +7 (917) 581 55 83</p>
+          <div class="contacts__socials socials">
             <ul class="socials__list">
               <li class="socials__item">
-                <a class="socials__link" href="#">Whatsapp</a>
+                <a class="socials__link" href="#">WhatsApp</a>
               </li>
               <li class="socials__item">
                 <a class="socials__link" href="#">Viber</a>
@@ -17,15 +18,30 @@
               </li>
             </ul>
           </div>
+          <div class="contacts-box__icon"></div>
         </div>
-        <div class="contacts__box">
-          <p class="contacts__text">
-            Приём заказов осуществляется:
-            <span>пн-вс с 10:00 до 22:00</span>
-          </p>
+        <div class="contacts__box contacts-box contacts-box--schedule">
+          <p class="contacts-box__text">Приём заказов осуществляется:</p>
+          <span>пн-вс с <time>10:00</time> до <time>22:00</time></span>
+          <div class="contacts-box__icon"></div>
+        </div>
+
+        <div class="contacts__shop">
+          <h2 class="contacts__heading">Наш фирменный магазин в Москве:</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--location">
+              ТРЦ «ХОРОШО», Хорошевское шоссе, дом 27, 2-этаж
+            </li>
+            <li class="contacts__item contacts__item--phone">
+              <a href="tel:+79175815583">+7 (917) 581 55 83</a>
+            </li>
+            <li class="contacts__item contacts__item--schedule">
+              <time>10:00</time> - <time>22:00</time> без выходных
+            </li>
+          </ul>
         </div>
       </div>
-      
+
       <div class="contacts__map map">
         <iframe
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Aca7d8ad744376ca1a4870a111b25c0962d6cb5ec12e5bc0e6b31c71bf00c837a&amp;source=constructor"

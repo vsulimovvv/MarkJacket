@@ -2,42 +2,293 @@
   <div class="container">
     <h2 class="catalog__title section-title">Зимняя коллекция</h2>
 
-    <div class="catalog__filters filters-block">
-      <ul class="filters-block__list">
-        <li class="filters-block__item">
-          <select
-            class="filters-block__select select"
-            name="vendor"
-            id="vendor"
-          >
-            <option value="vendor">по артиклю</option>
-            <option value="vendor">цена (возр.)</option>
-            <option value="vendor">цена (убыв.)</option>
-          </select>
+    <div class="catalog__filters filters">
+      <ul class="filters__list">
+        <li class="filters__filter">
+          <div class="select-block">
+            <span class="select-block__text">по артикулу</span>
+            <div class="select-dropdown">
+              <ul class="select-dropdown__list">
+                <li class="select-dropdown__item">по артикулу</li>
+                <li class="select-dropdown__item">цена (возр.)</li>
+                <li class="select-dropdown__item">цена (убыв.)</li>
+              </ul>
+            </div>
+          </div>
         </li>
-        <li class="filters-block__item">
-          <select class="filters-block__select select" name="size" id="size">
-            <option value="vendor">Размер</option>
-            <option value="vendor">32</option>
-            <option value="vendor">34</option>
-            <option value="vendor">36</option>
-          </select>
+
+        <li class="filters__filter">
+          <div class="select-block select-size">
+            <span class="select-block__text">Размер</span>
+            <div class="select-dropdown">
+              <ul class="select-dropdown__list select-size__list">
+                <li class="select-dropdown__item select-size__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__num">38</span>
+                  </label>
+                </li>
+                <li class="select-dropdown__item select-size__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__num">40</span>
+                  </label>
+                </li>
+                <li class="select-dropdown__item select-size__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__num">42</span>
+                  </label>
+                </li>
+                <li class="select-dropdown__item select-size__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__num">44</span>
+                  </label>
+                </li>
+                <li class="select-dropdown__item select-size__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__num">46</span>
+                  </label>
+                </li>
+              </ul>
+              <button class="select-dropdown__btn" type="button">
+                применить
+              </button>
+            </div>
+          </div>
         </li>
-        <li class="filters-block__item">
-          <select class="filters-block__select select" name="color" id="color">
-            <option value="vendor">Цвет</option>
-            <option value="vendor">красный</option>
-            <option value="vendor">желтый</option>
-            <option value="vendor">зеленый</option>
-          </select>
+        <li class="filters__filter">
+          <div class="select-block select-color">
+            <span class="select-block__text">Цвет</span>
+            <div class="select-dropdown">
+              <ul class="select-dropdown__list select-color__list">
+                <li class="select-dropdown__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box checkbox__box--blue"></span>
+                    <span class="checkbox__num">blue</span>
+                  </label>
+                </li>
+                <li class="select-dropdown__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box checkbox__box--black"></span>
+                    <span class="checkbox__num">black</span>
+                  </label>
+                </li>
+                <li class="select-dropdown__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box checkbox__box--yellow"></span>
+                    <span class="checkbox__num">yellow</span>
+                  </label>
+                </li>
+                <li class="select-dropdown__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box checkbox__box--pink"></span>
+                    <span class="checkbox__num">pink</span>
+                  </label>
+                </li>
+                <li class="select-dropdown__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box checkbox__box--gray"></span>
+                    <span class="checkbox__num">gray</span>
+                  </label>
+                </li>
+              </ul>
+              <button class="select-dropdown__btn" type="button">
+                применить
+              </button>
+            </div>
+          </div>
         </li>
-        <li class="filters-block__item">
-          <select class="filters-block__select select" name="price" id="price">
-            <option value="vendor">Цена</option>
-            <option value="vendor">от 10000 до 20000</option>
-            <option value="vendor">от 20000 до 30000</option>
-            <option value="vendor">от 30000 до 40000</option>
-          </select>
+        <li class="filters__filter">
+          <div class="select-block select-price">
+            <span class="select-block__text">Цена</span>
+            <div class="select-dropdown select-price__dropdown">
+              <div class="range-slider">
+                <span class="range-slider__min">руб</span>
+                <div class="range-slider__range" id="slider-handles"></div>
+                <span class="range-slider__max"></span>
+              </div>
+              <button
+                class="select-dropdown__btn select-price__btn"
+                type="button"
+              >
+                применить
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <button class="catalog__btn-filters btn" type="button">Фильтры</button>
+
+    <div class="catalog__filters-mobile filters-mobile">
+      <button
+        class="filters-mobile__close"
+        type="button"
+        aria-label="Закрыть фильтры"
+      >
+        <svg width="20" height="20">
+          <use xlink:href="images/sprite.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="filters-mobile__filters">
+        <li class="filters-mobile__filter">
+          <div class="filters-mobile__accordion accordion">
+            <button
+              class="filters-mobile__control accordion__control"
+              type="button"
+            >
+              Отображать по
+            </button>
+
+            <div class="filters-mobile__content accordion__content">
+              <ul class="filters-mobile__list">
+                <li class="filters-mobile__item">по артикулу</li>
+                <li class="filters-mobile__item">цена (возр.)</li>
+                <li class="filters-mobile__item">цена (убыв.)</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="filters-mobile__filter">
+          <div class="filters-mobile__accordion accordion">
+            <button
+              class="filters-mobile__control accordion__control"
+              type="button"
+            >
+              Размер
+            </button>
+
+            <div class="filters-mobile__content accordion__content">
+              <ul class="filters-mobile__list">
+                <li class="filters-mobile__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__num">38</span>
+                  </label>
+                </li>
+                <li class="filters-mobile__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__num">40</span>
+                  </label>
+                </li>
+                <li class="filters-mobile__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__num">42</span>
+                  </label>
+                </li>
+                <li class="filters-mobile__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__num">44</span>
+                  </label>
+                </li>
+                <li class="filters-mobile__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__num">46</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="filters-mobile__filter">
+          <div class="filters-mobile__accordion accordion">
+            <button
+              class="filters-mobile__control accordion__control"
+              type="button"
+            >
+              Цвет
+            </button>
+
+            <div class="filters-mobile__content accordion__content">
+              <ul class="filters-mobile__list">
+                <li class="filters-mobile__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box checkbox__box--blue"></span>
+                    <span class="checkbox__num">blue</span>
+                  </label>
+                </li>
+                <li class="filters-mobile__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box checkbox__box--black"></span>
+                    <span class="checkbox__num">black</span>
+                  </label>
+                </li>
+                <li class="filters-mobile__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box checkbox__box--yellow"></span>
+                    <span class="checkbox__num">yellow</span>
+                  </label>
+                </li>
+                <li class="filters-mobile__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box checkbox__box--pink"></span>
+                    <span class="checkbox__num">pink</span>
+                  </label>
+                </li>
+                <li class="filters-mobile__item">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox" />
+                    <span class="checkbox__box checkbox__box--gray"></span>
+                    <span class="checkbox__num">gray</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="filters-mobile__filter">
+          <div class="filters-mobile__accordion accordion">
+            <button
+              class="filters-mobile__control accordion__control"
+              type="button"
+            >
+              Цена
+            </button>
+
+            <div class="filters-mobile__content accordion__content">
+              <div class="filters-mobile__price">
+                <div class="range-slider">
+                  <span class="range-slider__min">руб</span>
+                  <div class="range-slider__range"></div>
+                  <span class="range-slider__max"></span>
+                </div>
+                <button
+                  class="select-dropdown__btn select-price__btn"
+                  type="button"
+                >
+                  применить
+                </button>
+              </div>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
@@ -68,7 +319,7 @@
             </button>
 
             <div class="product-card__img">
-              <img src="images/content/products/1.jpg" alt="Карточка товара" />
+              <img src="images/content/products/women/1.jpg" alt="Карточка товара" />
             </div>
             <h3 class="product-card__title"><a href="#">Пальто женское</a></h3>
             <div class="product-card__price">7 500 <span>₽</span></div>
@@ -98,7 +349,37 @@
             </button>
 
             <div class="product-card__img">
-              <img src="images/content/products/1.jpg" alt="Карточка товара" />
+              <img src="images/content/products/women/2.jpg" alt="Карточка товара" />
+            </div>
+            <h3 class="product-card__title"><a href="#">Куртка женское</a></h3>
+            <div class="product-card__price">7 500 <span>₽</span></div>
+          </article>
+        </li>
+        <li class="catalog__item">
+          <article class="product-card">
+            <div class="product-card__btns">
+              <button class="product-btn product-btn--favorite" type="button">
+                <span class="product-btn__icon">
+                  <svg width="14" height="13">
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </span>
+              </button>
+              <button class="product-btn product-btn--cart" type="button">
+                <span class="product-btn__icon">
+                  <svg width="15" height="13">
+                    <use xlink:href="images/sprite.svg#shopping-bag"></use></svg
+                ></span>
+                <span class="product-btn__text">Купить</span>
+              </button>
+            </div>
+
+            <button class="product-card__btn" type="button">
+              Быстрый просмотр
+            </button>
+
+            <div class="product-card__img">
+              <img src="images/content/products/women/3.jpg" alt="Карточка товара" />
             </div>
             <h3 class="product-card__title"><a href="#">Пальто женское</a></h3>
             <div class="product-card__price">7 500 <span>₽</span></div>
@@ -128,7 +409,37 @@
             </button>
 
             <div class="product-card__img">
-              <img src="images/content/products/1.jpg" alt="Карточка товара" />
+              <img src="images/content/products/women/4.jpg" alt="Карточка товара" />
+            </div>
+            <h3 class="product-card__title"><a href="#">Полупальто женское</a></h3>
+            <div class="product-card__price">7 500 <span>₽</span></div>
+          </article>
+        </li>
+        <li class="catalog__item">
+          <article class="product-card">
+            <div class="product-card__btns">
+              <button class="product-btn product-btn--favorite" type="button">
+                <span class="product-btn__icon">
+                  <svg width="14" height="13">
+                    <use xlink:href="images/sprite.svg#heart"></use>
+                  </svg>
+                </span>
+              </button>
+              <button class="product-btn product-btn--cart" type="button">
+                <span class="product-btn__icon">
+                  <svg width="15" height="13">
+                    <use xlink:href="images/sprite.svg#shopping-bag"></use></svg
+                ></span>
+                <span class="product-btn__text">Купить</span>
+              </button>
+            </div>
+
+            <button class="product-card__btn" type="button">
+              Быстрый просмотр
+            </button>
+
+            <div class="product-card__img">
+              <img src="images/content/products/women/5.jpg" alt="Карточка товара" />
             </div>
             <h3 class="product-card__title"><a href="#">Пальто женское</a></h3>
             <div class="product-card__price">7 500 <span>₽</span></div>
@@ -158,9 +469,9 @@
             </button>
 
             <div class="product-card__img">
-              <img src="images/content/products/1.jpg" alt="Карточка товара" />
+              <img src="images/content/products/women/6.jpg" alt="Карточка товара" />
             </div>
-            <h3 class="product-card__title"><a href="#">Пальто женское</a></h3>
+            <h3 class="product-card__title"><a href="#">Куртка женское</a></h3>
             <div class="product-card__price">7 500 <span>₽</span></div>
           </article>
         </li>
@@ -188,9 +499,9 @@
             </button>
 
             <div class="product-card__img">
-              <img src="images/content/products/1.jpg" alt="Карточка товара" />
+              <img src="images/content/products/women/7.jpg" alt="Карточка товара" />
             </div>
-            <h3 class="product-card__title"><a href="#">Пальто женское</a></h3>
+            <h3 class="product-card__title"><a href="#">Куртка женское</a></h3>
             <div class="product-card__price">7 500 <span>₽</span></div>
           </article>
         </li>
@@ -218,67 +529,7 @@
             </button>
 
             <div class="product-card__img">
-              <img src="images/content/products/1.jpg" alt="Карточка товара" />
-            </div>
-            <h3 class="product-card__title"><a href="#">Пальто женское</a></h3>
-            <div class="product-card__price">7 500 <span>₽</span></div>
-          </article>
-        </li>
-        <li class="catalog__item">
-          <article class="product-card">
-            <div class="product-card__btns">
-              <button class="product-btn product-btn--favorite" type="button">
-                <span class="product-btn__icon">
-                  <svg width="14" height="13">
-                    <use xlink:href="images/sprite.svg#heart"></use>
-                  </svg>
-                </span>
-              </button>
-              <button class="product-btn product-btn--cart" type="button">
-                <span class="product-btn__icon">
-                  <svg width="15" height="13">
-                    <use xlink:href="images/sprite.svg#shopping-bag"></use></svg
-                ></span>
-                <span class="product-btn__text">Купить</span>
-              </button>
-            </div>
-
-            <button class="product-card__btn" type="button">
-              Быстрый просмотр
-            </button>
-
-            <div class="product-card__img">
-              <img src="images/content/products/1.jpg" alt="Карточка товара" />
-            </div>
-            <h3 class="product-card__title"><a href="#">Пальто женское</a></h3>
-            <div class="product-card__price">7 500 <span>₽</span></div>
-          </article>
-        </li>
-        <li class="catalog__item">
-          <article class="product-card">
-            <div class="product-card__btns">
-              <button class="product-btn product-btn--favorite" type="button">
-                <span class="product-btn__icon">
-                  <svg width="14" height="13">
-                    <use xlink:href="images/sprite.svg#heart"></use>
-                  </svg>
-                </span>
-              </button>
-              <button class="product-btn product-btn--cart" type="button">
-                <span class="product-btn__icon">
-                  <svg width="15" height="13">
-                    <use xlink:href="images/sprite.svg#shopping-bag"></use></svg
-                ></span>
-                <span class="product-btn__text">Купить</span>
-              </button>
-            </div>
-
-            <button class="product-card__btn" type="button">
-              Быстрый просмотр
-            </button>
-
-            <div class="product-card__img">
-              <img src="images/content/products/1.jpg" alt="Карточка товара" />
+              <img src="images/content/products/women/8.jpg" alt="Карточка товара" />
             </div>
             <h3 class="product-card__title"><a href="#">Пальто женское</a></h3>
             <div class="product-card__price">7 500 <span>₽</span></div>

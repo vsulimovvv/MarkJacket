@@ -1,8 +1,8 @@
 ## Mark Jacket
 Главная: https://vsulimovvv.github.io/mark-jacket/dist/index.html  
-Про нас: https://vsulimovvv.github.io/mark-jacket/dist/about-us.html  
+О бренде: https://vsulimovvv.github.io/mark-jacket/dist/about-page.html  
 Контакты: https://vsulimovvv.github.io/mark-jacket/dist/contacts.html  
-Наши работы: https://vsulimovvv.github.io/mark-jacket/dist/our-works.html  
-Животные: https://vsulimovvv.github.io/mark-jacket/dist/pets.html  
-Услуги и цены: https://vsulimovvv.github.io/mark-jacket/dist/services-prices.html  
-Комплекс услуг: https://vsulimovvv.github.io/mark-jacket/dist/complex.html  
+Обмен и возврат: https://vsulimovvv.github.io/mark-jacket/dist/exchange.html  
+Арендодателям: https://vsulimovvv.github.io/mark-jacket/dist/landlords.html  
+Карточка товара: https://vsulimovvv.github.io/mark-jacket/dist/product-card.html  
+Доставка и оплата: https://vsulimovvv.github.io/mark-jacket/dist/chipping-payment.html  

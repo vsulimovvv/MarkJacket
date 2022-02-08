@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,15 +30,12 @@
   </head>
 
   <body>
-    <h1 aria-label="Главная старница"></h1>
+    <h1 class="visually-hidden">Женское пальто</h1>
     <div class="site-wrapper">
       <header class="header">
   <div class="container">
     <div class="header__wrapper">
       <div class="header__top">
-        <button class="header__toggle" type="button" aria-label="Открыть меню">
-          <span class="header__toggle-line"></span>
-        </button>
         <div class="header__search search-block">
           <input
             class="search-block__input"
@@ -47,7 +44,7 @@
           />
         </div>
 
-        <a class="header__logo logo" href="#">
+        <a class="header__logo logo" href="index.html">
           <picture>
             <source srcset="images/logo-small.png" media="(max-width: 991px)" />
             <img src="images/logo.png" alt="Логотип" />
@@ -98,7 +95,12 @@
             </li>
           </ul>
         </div>
+
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
       </div>
+      
       <div class="header__bottom">
         <nav class="header__menu menu">
           <ul class="menu__list">
@@ -124,6 +126,26 @@
   </div>
 </header>
 
+
+      <div class="breadcrumbs breadcrumbs--left">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#"> Женщинам </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Зимняя коллекция</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link">Пальто женское</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <main class="main">
         <section class="product">
   <div class="container">
@@ -134,37 +156,37 @@
             <ul class="swiper-wrapper">
               <li class="swiper-slide slider-nav__slide">
                 <img
-                  src="images/content/products/slider/1.jpg"
+                  src="images/content/products/women/slider/1.jpg"
                   alt="Слайд №1"
                 />
               </li>
               <li class="swiper-slide slider-nav__slide">
                 <img
-                  src="images/content/products/slider/2.jpg"
+                  src="images/content/products/women/slider/2.jpg"
                   alt="Слайд №1"
                 />
               </li>
               <li class="swiper-slide slider-nav__slide">
                 <img
-                  src="images/content/products/slider/3.jpg"
+                  src="images/content/products/women/slider/3.jpg"
                   alt="Слайд №1"
                 />
               </li>
               <li class="swiper-slide slider-nav__slide">
                 <img
-                  src="images/content/products/slider/4.jpg"
+                  src="images/content/products/women/slider/4.jpg"
                   alt="Слайд №1"
                 />
               </li>
               <li class="swiper-slide slider-nav__slide">
                 <img
-                  src="images/content/products/slider/5.jpg"
+                  src="images/content/products/women/slider/5.jpg"
                   alt="Слайд №1"
                 />
               </li>
               <li class="swiper-slide slider-nav__slide">
                 <img
-                  src="images/content/products/slider/6.jpg"
+                  src="images/content/products/women/slider/6.jpg"
                   alt="Слайд №1"
                 />
               </li>
@@ -175,37 +197,37 @@
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
                 <img
-                  src="images/content/products/slider/1-big.jpg"
+                  src="images/content/products/women/slider/1-big.jpg"
                   alt="Слайд №1"
                 />
               </li>
               <li class="swiper-slide">
                 <img
-                  src="images/content/products/slider/2.jpg"
+                  src="images/content/products/women/slider/2.jpg"
                   alt="Слайд №2"
                 />
               </li>
               <li class="swiper-slide">
                 <img
-                  src="images/content/products/slider/3.jpg"
+                  src="images/content/products/women/slider/3.jpg"
                   alt="Слайд №3"
                 />
               </li>
               <li class="swiper-slide">
                 <img
-                  src="images/content/products/slider/4.jpg"
+                  src="images/content/products/women/slider/4.jpg"
                   alt="Слайд №4"
                 />
               </li>
               <li class="swiper-slide">
                 <img
-                  src="images/content/products/slider/5.jpg"
+                  src="images/content/products/women/slider/5.jpg"
                   alt="Слайд №4"
                 />
               </li>
               <li class="swiper-slide">
                 <img
-                  src="images/content/products/slider/6.jpg"
+                  src="images/content/products/women/slider/6.jpg"
                   alt="Слайд №4"
                 />
               </li>
@@ -226,7 +248,7 @@
               <button
                 class="product-colors__btn product-colors__btn--active"
                 type="button"
-                style="background-image: url('images/content/products/1.jpg')"
+                style="background-image: url('images/content/products/women/1.jpg')"
               ></button>
             </li>
             <li class="product-colors__item">
@@ -234,7 +256,7 @@
                 class="product-colors__btn"
                 type="button"
                 style="
-                  background-image: url('images/content/products/1-blue.jpg');
+                  background-image: url('images/content/products/women/1-blue.jpg');
                 "
               ></button>
             </li>
@@ -243,7 +265,7 @@
                 class="product-colors__btn"
                 type="button"
                 style="
-                  background-image: url('images/content/products/1-gray.jpg');
+                  background-image: url('images/content/products/women/1-gray.jpg');
                 "
               ></button>
             </li>
@@ -365,9 +387,9 @@
             </button>
 
             <div class="product-card__img">
-              <img src="images/content/products/1.jpg" alt="Карточка товара" />
+              <img src="images/content/products/women/5.jpg" alt="Карточка товара" />
             </div>
-            <h3 class="product-card__title"><a href="#">Куртка мужская</a></h3>
+            <h3 class="product-card__title"><a href="#">Пальто женское</a></h3>
             <div class="product-card__price">7 500 <span>₽</span></div>
           </article>
         </li>
@@ -395,9 +417,9 @@
             </button>
 
             <div class="product-card__img">
-              <img src="images/content/products/1.jpg" alt="Карточка товара" />
+              <img src="images/content/products/women/6.jpg" alt="Карточка товара" />
             </div>
-            <h3 class="product-card__title"><a href="#">Куртка мужская</a></h3>
+            <h3 class="product-card__title"><a href="#">Куртка женская</a></h3>
             <div class="product-card__price">7 500 <span>₽</span></div>
           </article>
         </li>
@@ -425,9 +447,9 @@
             </button>
 
             <div class="product-card__img">
-              <img src="images/content/products/1.jpg" alt="Карточка товара" />
+              <img src="images/content/products/women/7.jpg" alt="Карточка товара" />
             </div>
-            <h3 class="product-card__title"><a href="#">Куртка мужская</a></h3>
+            <h3 class="product-card__title"><a href="#">Куртка женская</a></h3>
             <div class="product-card__price">7 500 <span>₽</span></div>
           </article>
         </li>
@@ -455,9 +477,9 @@
             </button>
 
             <div class="product-card__img">
-              <img src="images/content/products/1.jpg" alt="Карточка товара" />
+              <img src="images/content/products/women/8.jpg" alt="Карточка товара" />
             </div>
-            <h3 class="product-card__title"><a href="#">Куртка мужская</a></h3>
+            <h3 class="product-card__title"><a href="#">Пальто женское</a></h3>
             <div class="product-card__price">7 500 <span>₽</span></div>
           </article>
         </li>
@@ -561,6 +583,9 @@
 
 <!-- Choices JS -->
 <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- wNumb -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js"></script>
 
 <!-- JS -->
 <script src="js/main.min.js"></script>
