@@ -93,7 +93,6 @@
     <h1 class="visually-hidden">Страница каталога</h1>
     <div class="site-wrapper">
       <header class="header">
-  
   <div class="overlay"></div>
 
   <div class="menu-mobile">
@@ -110,12 +109,15 @@
     <ul class="menu-mobile__body">
       <li class="menu-mobile__item">
         <div class="menu-mobile-box accordion">
-          <button
-            class="menu-mobile-box__name accordion__control"
-            type="button"
-          >
-            Женщинам
-          </button>
+          <div class="menu-mobile-box__top">
+            <a class="menu-mobile-box__name" href="catalog.html"> Женщинам </a>
+
+            <button
+              class="accordion__control"
+              type="button"
+              aria-label="Открыть"
+            ></button>
+          </div>
 
           <div class="menu-mobile-box__content accordion__content">
             <ul class="menu-mobile-box__list">
@@ -131,12 +133,15 @@
       </li>
       <li class="menu-mobile__item">
         <div class="menu-mobile-box accordion">
-          <button
-            class="menu-mobile-box__name accordion__control"
-            type="button"
-          >
-            Мужчинам
-          </button>
+          <div class="menu-mobile-box__top">
+            <a class="menu-mobile-box__name" href="catalog.html">Мужчинам</a>
+
+            <button
+              class="accordion__control"
+              type="button"
+              aria-label="Открыть"
+            ></button>
+          </div>
 
           <div class="menu-mobile-box__content accordion__content">
             <ul class="menu-mobile-box__list">
@@ -240,10 +245,77 @@
         <nav class="header__menu menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="#">Женщинам</a>
+              <a class="menu__link menu__link--dropdown" href="#">Женщинам</a>
+
+              <div class="dropmenu">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"> Зимняя коллекция </a>
+
+                    <div class="submenu">
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="dropmenu__link" href="#">Пальто</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="dropmenu__link" href="#">Куртки</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Зимняя коллекция</a>
+
+                    <div class="submenu submenu--cats">
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="dropmenu__link" href="#">Пальто</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="dropmenu__link" href="#">Куртки</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </li>
+
             <li class="menu__item">
-              <a class="menu__link" href="#">Мужчинам</a>
+              <a class="menu__link menu__link--dropdown" href="#">Мужчинам</a>
+
+              <div class="dropmenu">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"> Зимняя коллекция </a>
+
+                    <div class="submenu">
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Пальто</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Куртки</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Зимняя коллекция</a>
+
+                    <div class="submenu submenu">
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Пальто</a>
+                        </li>
+                        <li class="submenu__item">
+                          <a class="submenu__link" href="#">Куртки</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">Магазины</a>
