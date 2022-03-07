@@ -6,3 +6,5 @@
 Арендодателям: https://vsulimovvv.github.io/mark-jacket/dist/landlords.html  
 Карточка товара: https://vsulimovvv.github.io/mark-jacket/dist/product-card.html  
 Доставка и оплата: https://vsulimovvv.github.io/mark-jacket/dist/shipping-payment.html  
+Каталог: https://vsulimovvv.github.io/mark-jacket/dist/catalog.html  
+Магазины: https://vsulimovvv.github.io/mark-jacket/dist/shop.html  
